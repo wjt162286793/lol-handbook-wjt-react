@@ -1,0 +1,220 @@
+.allComBox {
+    display: flex;
+    .allComLeftBox{
+        margin-right: 20px;
+    }
+
+    .ant-card {
+        color: #fff !important;
+    }
+
+    .ant-card-bordered {
+        border: 1px solid #292727;
+    }
+
+    .ant-card-head {
+        color: #e4e4d3 !important;
+        border-bottom: #292727 1px solid;
+    }
+
+    .allComRuneItem {
+        display: flex;
+        margin-bottom: 20px;
+
+        ul {
+            display: flex;
+            margin-right: 50px;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 40px;
+                    margin-right: 20px;
+                }
+
+                span {
+                    margin: 10px 0px 0px -15px;
+                }
+            }
+        }
+
+        .mainRuneList {
+            li:nth-child(5){
+                margin-right: 30px;
+            }
+        }
+
+        .viceRuneList {}
+
+        .comeOnBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 50px;
+            justify-content: space-around;
+
+            p {
+                color: #1db9aa;
+                font-size: 18px;
+            }
+        }
+
+        .winBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            p {
+                color: #9b8151;
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    .equipmentBox {
+        display: flex;
+        margin-bottom: 30px;
+        width: 800px;
+    }
+
+    .flowChatBox {
+        display: flex;
+        margin-bottom: 30px;
+        width: 800px;
+
+        .ant-card {
+            width: 100%;
+
+            .chatItem {
+                // width: 300px;
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+    }
+
+    .allComRightBox {
+        background: #021524;
+        flex: 1;
+        .tabTop {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+
+            p {
+                cursor: pointer;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;
+                //   border: 1px solid #313539;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            .activeP {
+                border: 1px solid #2c2c2c;
+                color: #bd8c32;
+            }
+
+            .normalP {
+                color: #5d615b;
+            }
+        }
+
+        .tabContent {
+            .confrontList {
+                .confrontItem {
+                    height: 65px;
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 20px;
+
+                    span {
+                        font-size: 16px;
+                        margin-right: 20px;
+                    }
+
+                    img {
+                        width: 50px;
+                        border-radius: 14px;
+                    }
+
+                    .chartItem {
+                        width: 200px;
+                        height: 70px;
+                        margin: 0 20px;
+                        background-color: #fff;
+                    }
+                }
+
+                margin-bottom: 20px;
+            }
+            .ant-card{
+                width: 400px !important;
+            }
+
+            .skillList {
+                ul {
+                    display: flex;
+
+                    li {
+                        border: 1px solid #31353b;
+                        width: 30px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 40px;
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+.positionCard {
+    position: relative;
+
+    .positionText {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    }
+}
+
+.equirementItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .itemLeft {
+        img {
+            width: 40px;
+            margin-right: 10px;
+            border: 1px solid #313537;
+        }
+    }
+
+    .itemRight {
+        span {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .comeonSpan {
+            color: #1db8ab;
+        }
+
+        .winSpan {
+            color: #9a7b45;
+        }
+    }
+}

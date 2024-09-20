@@ -1,0 +1,53 @@
+.heroListBox {
+  padding-left: 20px;
+}
+.heroListBox h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.heroListBox .searchBox {
+  display: flex;
+  margin-top: 40px;
+}
+.heroListBox .searchBox .searchItem {
+  margin-left: 16px;
+}
+.heroListBox .heros {
+  height: auto;
+}
+.heroListBox .heros .list {
+  width: 1600px;
+  margin-top: 40px;
+}
+.heroListBox .heros .list .item {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  background: #000;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s;
+}
+.heroListBox .heros .list .item .positionList {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.heroListBox .heros .list .item .positionList img {
+  margin-right: 10px;
+}
+.heroListBox .heros .list .item .box {
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.heroListBox .heros .list .item .box img {
+  transition: all 0.3s;
+}
+.heroListBox .heros .list .item p {
+  margin: 10px 0px;
+  color: #fff;
+}

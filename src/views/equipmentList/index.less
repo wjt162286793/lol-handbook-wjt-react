@@ -1,0 +1,53 @@
+.equipmentMainBox {
+  padding-left: 20px;
+  h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .searchBox {
+    display: flex;
+    margin: 40px 10px;
+    .searchItem {
+      margin-left: 16px;
+    }
+  }
+
+  .equipmentList {
+    height: auto;
+    width: 1600px;
+    .equipmentItem {
+      display: flex;
+      width: 140px;
+      float: left;
+      margin: 10px;
+      cursor: pointer;
+    //   padding: 10px;
+      background-color: #021522;
+      flex-direction: column;
+      align-items: center;
+      border: #021522 1px solid;
+      img {
+        height: 80px;
+        margin:10px 0 15px;
+      }
+      
+      .label {
+        color: #fff;
+        font-size: 16px;
+        margin:5px 0;
+        max-width: 140px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .price {
+        color: #b3955a;
+        margin:15px 0 10px;
+      }
+    }
+    .equipmentItem:hover{
+        border: #b3955a 1px solid;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.heroListBox{
+    padding-left: 20px;
+    h4{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .searchBox{
+        display: flex;
+        margin-top: 40px;
+        .searchItem{
+            margin-left: 16px;
+        }
+    }
+    .heros{
+        height: auto;
+        .list{
+           
+            width: 1600px;
+            margin-top: 40px;
+            .item{
+                float: left;
+                margin-right: 20px;
+                margin-bottom: 30px;
+                background: #000;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                transition: all 0.3s;
+                .positionList{
+                    position: absolute;
+                    left: 10px;
+                    top:10px;
+                    // margin: 30px 20px;
+                    img{
+                        margin-right: 10px;
+                    }
+                }
+                .box{
+                    // max-height:250px;
+                    overflow: hidden;
+                    transition: all 0.3s;
+                    img{
+                        transition: all 0.3s;
+                        // width: 200px;
+                    }
+                }
+                p{
+                    margin:10px 0px;
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+}

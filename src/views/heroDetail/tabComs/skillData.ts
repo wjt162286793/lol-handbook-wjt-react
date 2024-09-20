@@ -1,0 +1,69 @@
+export const globalSkill = {
+    title:{
+        main:'召唤师技能',
+        minor:[
+            '登场率','胜率'
+        ],
+    },
+    data:[
+        {
+            equire:[
+                {
+                    url:'https://game.gtimg.cn/images/lol/act/img/spell/Summoner_flash.png',
+                    alt:'闪现',
+                },
+                {
+                    url:'https://game.gtimg.cn/images/lol/act/img/spell/Summoner_teleport.png',
+                    alt:'传送',
+                }
+                
+            ],
+            comeOnSpan:'54.77%',
+            winSpan:'47.13%'
+        },
+        {
+            equire:[
+                {
+                    url:'https://game.gtimg.cn/images/lol/act/img/spell/Summoner_flash.png',
+                    alt:'闪现',
+                },
+                {
+                    url:'https://game.gtimg.cn/images/lol/act/img/spell/SummonerIgnite.png',
+                    alt:'引燃',
+                }
+            ],
+            comeOnSpan:'43.99%',
+            winSpan:'48.32%'
+        }
+    ]
+}
+
+export const selfSkill = {
+    title:{
+        main:'推荐技能加点',
+        minor:[
+            '登场率','胜率'
+        ],
+    },
+    data:[
+        {
+            equire:[
+                {
+                    url:'https://game.gtimg.cn/images/lol/act/img/spell/AatroxQ.png',
+                    alt:'暗裔利刃',
+                },
+                {
+                    url:'https://game.gtimg.cn/images/lol/act/img/spell/AatroxE.png',
+                    alt:'暗影冲决',
+                },
+                {
+                    url:'https://game.gtimg.cn/images/lol/act/img/spell/AatroxW.png',
+                    alt:'恶火束链',
+                }
+                
+            ],
+            comeOnSpan:'78.97%',
+            winSpan:'58.45%'
+        },
+    ]
+}

@@ -1,0 +1,127 @@
+.heroDetailBox{
+    display: flex;
+    color: #fff;
+    background: #021524;
+    .leftBox{
+        width: 300px;
+        .swiperBox {
+            .swiperMain{
+                position: relative;
+                width: 300px;
+                height: 330px;
+                overflow: hidden;
+                .swiper-wrapper{
+                    width: 100% !important;
+                    height: 330px !important;
+                }
+                .swiper-slide{
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100% !important;
+                    overflow: hidden;
+                    margin-right: 0px !important;
+                    .swiperItemImg{
+                        width: 100%;
+                        transform: translateY(100px);
+                        // height: 400px;
+                    }
+                }
+               .positionBox{
+                z-index: 2;
+                position: absolute;
+                left: 45%;
+                bottom: 30px;
+                img{
+                    width: 20px;
+                    margin-right: 10px;
+                }
+               }
+            }
+        }
+        .designBox{
+            padding: 20px 10px;
+            h4{
+                font-size: 14px;
+            }
+            .tagList{
+                margin: 20px 0px 50px;
+                span{
+                    color: #000;
+                }
+            }
+            .info{
+                .ant-row{
+                    margin-bottom: 30px;
+                    display: flex;
+                    align-items: center;
+                }
+                .skillInfo{
+                    .skillImg{
+                        width: 30px;
+                        margin-right: 10px;
+                    }
+                }
+                .complexity{
+                  .progressDiv{
+                    width: 50px;
+                    height: 5px;
+                    background: #b49659;
+                    border-radius: 1px;
+                    margin-right: 10px;
+                  }
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+    .rightBox{
+        flex: 1;
+        height: calc(100vh - 110px);
+        overflow: auto;
+        // overflow: auto;
+        .detailComBox{
+            height: 100%;
+            position: relative;
+            .bgImg{
+               width: calc(100vw - 480px);
+            }
+            .detailInfoBox{
+                position:absolute;
+                left: 0px;
+                top: 0px;
+                padding: 15px;
+                width: 100%;
+                h6{
+                    font-size: 20px;
+                }
+                .formBox{
+                    margin: 50px 0 30px;
+                    .ant-select{
+                        width: 180px !important;
+                    }
+                    .ant-select .ant-select-selection-item{
+                        color: #aa8d57 !important;
+                    }
+                    .ant-select-arrow{
+                        color: #aa8d57 !important;
+                    }
+                    .ant-radio-button{
+                        span{
+                            color: #505450 !important;
+                        }
+                        
+                    }
+                }
+            }
+
+        }
+
+    }
+}

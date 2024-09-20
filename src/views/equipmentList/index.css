@@ -1,0 +1,50 @@
+.equipmentMainBox {
+  padding-left: 20px;
+}
+.equipmentMainBox h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.equipmentMainBox .searchBox {
+  display: flex;
+  margin: 40px 10px;
+}
+.equipmentMainBox .searchBox .searchItem {
+  margin-left: 16px;
+}
+.equipmentMainBox .equipmentList {
+  height: auto;
+  width: 1600px;
+}
+.equipmentMainBox .equipmentList .equipmentItem {
+  display: flex;
+  width: 140px;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #021522;
+  flex-direction: column;
+  align-items: center;
+  border: #021522 1px solid;
+}
+.equipmentMainBox .equipmentList .equipmentItem img {
+  height: 80px;
+  margin: 10px 0 15px;
+}
+.equipmentMainBox .equipmentList .equipmentItem .label {
+  color: #fff;
+  font-size: 16px;
+  margin: 5px 0;
+  max-width: 140px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.equipmentMainBox .equipmentList .equipmentItem .price {
+  color: #b3955a;
+  margin: 15px 0 10px;
+}
+.equipmentMainBox .equipmentList .equipmentItem:hover {
+  border: #b3955a 1px solid;
+}
