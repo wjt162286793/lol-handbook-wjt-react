@@ -8,8 +8,10 @@ import centerImg from '@/assets/heroList/center.svg'
 import fenceImg from '@/assets/heroList/fence.svg'
 import bottomImg from '@/assets/heroList/bottom.svg'
 import assistImg from '@/assets/heroList/assist.svg'
+import lockImg from '@/assets/heroList/lock.svg' 
 import {useNavigate} from 'react-router-dom'
 import { getHeroList } from '@/api/heroMode';
+import {message} from 'antd'
 
 
 export default function index() {
@@ -76,7 +78,12 @@ positionMap.set('assist',assistImg)
   const clickItemHandler = (id)=>{
     console.log(id,'id的值')
     console.log('点击事件')
-    navigate(`/dashboard/heroDetail?id=${id}`)
+    if(id > 18){
+      message.info('不好意思,该英雄的具体信息未录入')
+    }else{
+      navigate(`/dashboard/heroDetail?id=${id}`)
+    }
+    
   }
 
 
@@ -104,12 +111,12 @@ positionMap.set('assist',assistImg)
         <div className='searchItem'>
         <Radio.Group onChange={onChange} defaultValue="all">
           <Radio.Button value="all">全部定位</Radio.Button>
-          <Radio.Button value="warrior">战士</Radio.Button>
-          <Radio.Button value="master">法师</Radio.Button>
+          <Radio.Button value="fighter">战士</Radio.Button>
+          <Radio.Button value="mage">法师</Radio.Button>
           <Radio.Button value="assassin">刺客</Radio.Button>
           <Radio.Button value="tank">坦克</Radio.Button>
-          <Radio.Button value="shooter">射手</Radio.Button>
-          <Radio.Button value="assister">辅助</Radio.Button>
+          <Radio.Button value="marksman">射手</Radio.Button>
+          <Radio.Button value="support">辅助</Radio.Button>
         </Radio.Group>
         </div>
       </div>
@@ -129,6 +136,9 @@ positionMap.set('assist',assistImg)
               </div>
             <div className='box' style={getBoxStyle(item.id)}>
             <img src={item.img} alt="" style={getImgStyle(item.id)}/>
+            {
+              item.id > 18 ? <img src={lockImg} className='lockImg'/>:null
+            }
             </div>
             <p>{item.nickname}</p>
           </li>

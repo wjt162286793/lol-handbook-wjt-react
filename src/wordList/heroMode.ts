@@ -24,10 +24,10 @@ export const heroPostionImg = {
 
 export const heroProperty = {
     all:'全部定位',
-    warrior:'战士',
-    master:'法师',
+    fighter:'战士',
+    mage:'法师',
     assassin:'刺客',
     tank:'坦克',
-    shooter:'射手',
-    assister:'辅助'
+    marksman:'射手',
+    support:'辅助'
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './index.less'
-import { Input, Radio, Col, Row } from 'antd';
+import { Input, Radio, Col, Row, Tooltip } from 'antd';
 import { getEquirementList } from '../../api/equipmentMode'
 const { Search } = Input;
 
@@ -39,12 +39,15 @@ export default function index() {
             <ul className='equipmentList'>
                 {equipmentList.map(item => {
                     return (
-                        <li className='equipmentItem' key={item.id}>
-                             <img src={item.img_url} alt="" />
-                             <span className='label'>{item.name}</span>
-                             <span className='price'>{item.price}</span>
-                        </li>
-                        
+                        <Tooltip title={item.description}>
+                            <li className='equipmentItem' key={item.id}>
+                                <img src={item.img_url} alt="" />
+                                <span className='label'>{item.name}</span>
+                                <span className='price'>{item.price}</span>
+                            </li>
+                        </Tooltip>
+
+
                     )
                 })}
 
